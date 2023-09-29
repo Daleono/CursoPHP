@@ -1,8 +1,10 @@
 <?php
+    //VIDEO 57
     require "Devuelve_Productos.php";
 
+    $seccion=$_GET["buscar"];
     $productos = new DevuelveProductos();
-    $array_productos = $productos->get_productos();
+    $array_productos = $productos->get_productos($seccion);
 ?>
 
 <!DOCTYPE html>
